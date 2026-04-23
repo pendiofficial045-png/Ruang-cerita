@@ -1,0 +1,64 @@
+<!DOCTYPE html><html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RuangCerita.id</title>
+<meta name="description" content="Baca gratis, cerita tanpa batas"><style>
+body {margin:0;font-family:Arial;background:#0f172a;color:#fff}
+header{background:#020617;padding:20px;text-align:center}
+.container{padding:20px;max-width:900px;margin:auto}
+.card{background:#1e293b;padding:20px;border-radius:12px;margin-bottom:20px}
+.button{display:inline-block;padding:10px 15px;background:#38bdf8;color:#000;border-radius:6px;text-decoration:none;margin-top:10px}
+.nav{display:flex;gap:10px;justify-content:center;margin-top:10px}
+.nav button{padding:8px 12px;border:none;border-radius:6px;background:#334155;color:#fff;cursor:pointer}
+.hidden{display:none}
+footer{text-align:center;padding:20px;background:#020617}
+</style><script>
+function showPage(page){
+ document.getElementById('home').classList.add('hidden');
+ document.getElementById('read').classList.add('hidden');
+ document.getElementById('premium').classList.add('hidden');
+ document.getElementById(page).classList.remove('hidden');
+}
+</script></head>
+<body><header>
+<h1>RuangCerita.id</h1>
+<p>Baca gratis, cerita tanpa batas</p>
+<div class="nav">
+<button onclick="showPage('home')">Beranda</button>
+<button onclick="showPage('read')">Baca</button>
+<button onclick="showPage('premium')">Ebook</button>
+</div>
+</header><div class="container"><!-- HOME --><div id="home">
+<div class="card">
+<h2>Selamat Datang</h2>
+<p>Platform cerita gratis dan ebook premium karya Pendi Story.</p>
+</div><div class="card">
+<h3>Cerita Terbaru</h3>
+<p>Kisah cinta penuh luka dan penyesalan...</p>
+<button class="button" onclick="showPage('read')">Baca</button>
+</div>
+</div><!-- READ PAGE --><div id="read" class="hidden">
+<div class="card">
+<h2>Judul Cerita: Cinta yang Terluka</h2>
+<p>Hari itu hujan turun deras, dan semuanya berubah...Ia tidak pernah menyangka bahwa cinta yang ia perjuangkan akan berakhir dengan luka yang begitu dalam...
+
+(ini contoh isi, nanti kamu ganti sendiri)
+
+</p><p><b>Lanjutannya lebih seru...</b></p>
+<button class="button" onclick="showPage('premium')">Baca Versi Lengkap</button>
+</div>
+</div><!-- PREMIUM --><div id="premium" class="hidden">
+<div class="card">
+<h2>Ebook Premium</h2>
+<p>Dapatkan cerita lengkap tanpa batas.</p>
+<a href="#" class="button">Beli via DANA</a>
+</div>
+</div><!-- SHARE --><div class="card">
+<h3>Bagikan</h3>
+<a class="button" href="https://wa.me/?text=Kunjungi%20RuangCerita.id">WhatsApp</a>
+<a class="button" href="https://www.facebook.com/sharer/sharer.php?u=https://ruangcerita.id">Facebook</a>
+</div></div><footer>
+<p>© 2026 Pendi Story</p>
+</footer></body>
+</html>
